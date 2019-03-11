@@ -1,0 +1,236 @@
+/*
+ * Desktop CSS
+ */
+@media only screen and (min-width: 1025px) {
+	#content, #header-content {
+		width: 100%;
+		margin 0 auto;
+	}
+
+	#livesearch {
+		width: 96.1%;
+	}
+}
+
+* {
+	width: 100%;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	max-width: 100% !important;
+	overflow-x: hidden !important;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url('/quick-ticket/images/bg-library-picture.jpg');
+	background-position: right center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	background-image: url("/ods/images/bg-header-grey.jpg");
+	z-index: 100;
+}
+
+#header-content {
+	height: 80px;
+	width: 100%;
+	display: flex;
+  align-items: center;
+	background-color:rgba(0,0,0,.7);
+}
+#sign-in {
+	color: white;
+	text-align: left;
+	padding-left: 10px;
+}
+#day-of {
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+}
+#content {
+	padding: 7px;
+	min-height: calc(100% - 200px);
+	position: relative;
+}
+#footer-content {
+	height: 120px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#image-container {
+	height: 100%;
+	width: 250px;
+	margin-left: auto;
+	padding-right: 10px;
+}
+#ods-logo {
+	max-height: 100%;
+	max-width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#incidents {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100%;
+	color: white;
+	border-collapse: collapse;
+	white-space: pre;
+	table-layout: fixed;
+	background-color: rgba(0,0,0,.8);
+	font-family: Arial;
+	font-size: 14px;
+	display: inline-block;
+}
+#incContent {
+	height: 55px;
+	width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#titlePage {
+	width: 79%;
+	float: right;
+	color: white;
+	border-collapse: collapse;
+	table-layout: fixed;
+	text-align: center;
+	background-color: rgba(0,0,0,.8);
+	font-family: Arial;
+	font-size: 14px;
+}
+.w2-button{
+	text-align: center;
+	position: relative;
+	background-color: rgba(0,0,0,.80);
+	border: none;
+	color: white;
+	height: 56px;
+	float: left;
+}
+#walkin-content {
+	float:left;
+	background-color: rgba(0,108,204,.80);
+	color: white;
+	padding-left: 5px;
+	height: 60px;
+	display:inline-block;
+	font-family: serif;
+	display: flex;
+	align-items: center;
+}
+.paddingDiv {
+  padding-top: 5px;
+  padding bottom: 5px;
+}
+
+.button{
+	position: relative;
+	width: 100%;
+	background-color: rgba(0,0,0,.80);
+	font-size: 140%;
+	height: 60px;
+	display: inline-block;
+	border: none;
+	color: white;
+}
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+@keyframes spin {
+	0% { transform: rotate(0deg);}
+	100% { transform: rotate(360deg);}
+}
+
+textarea{
+	resize: none;
+}
+
+#livesearch {
+	z-index: 50;
+	font-size: 140%;
+	text-align: center;
+	position: absolute;
+	background-color: white;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	border-radius: 0 0 10px 10px;
+	margin-left: 1%;
+
+	//width: 95%;
+}
+
+.livesearchResult:nth-child(odd) {
+	background-image: url("/ods/images/bg-lightgrey.png");
+}
+.livesearchResult:last-child {
+	border-radius: 0 0 10px 10px;
+}
+
+.directoryWrapper{
+	width: 100%;
+	height: 30px;
+	//margin: 11px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+.directoryWrapper:nth-child(odd) {
+	background-image: url("/ods/images/bg-lightgrey.png");
+}
+.directoryName {
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: right;
+	position: relative;
+	display: inline-block;
+}
+.directoryNumber {
+	padding-left: 5px;
+	width: 50%;
+	height: 100%;
+	float: right;
+	text-align: left;
+	position: relative;
+	display: inline-block;
+}
+table, tr, td {
+	border: 1px solid black;
+}
+#title{
+	position: relative;
+	margin-right: 15%;
+	display: inline-block;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+
+a:link    {color:red; background-color:transparent; text-decoration:underline}
+a:visited {color:white; background-color:transparent; text-decoration:none}
+a:hover   {color:white; background-color:transparent; text-decoration:underline}
